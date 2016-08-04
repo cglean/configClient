@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ClientApp {
-    @Value("${test:World!}")
+    @Value("${test:Configuration!}")
     String bar;
 
     @RequestMapping("/")
     String hello() {
-        return "Hello " + bar + "!";
+        return "PCF " + bar + "!";
     }
 }
